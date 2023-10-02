@@ -1,0 +1,43 @@
+.projecthandler {
+  border: 1px solid black;
+  border-radius: 20px;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.p1 {
+  /* background: url("./projekty/shop/shop1.png");
+  background-repeat: no-repeat; */
+}
+.p2 {
+  /*
+  background: url("./projekty/Layout/main.png");
+  background-repeat: no-repeat;
+  */
+}
+.projektyRow {
+  height: 45vh;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .proitem {
+    margin-bottom: 20px;
+  }
+  .projecthandler {
+    margin-bottom: 40px;
+  }
+  .projektyRow {
+    height: 90vh;
+  }
+  .p2 {
+    background-size: cover;
+  }
+  .p1 {
+    background-size: cover;
+    background-position: center;
+  }
+  .prozdj {
+    height: 330px;
+  }
+}

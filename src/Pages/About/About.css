@@ -1,0 +1,12 @@
+.omnie {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .omnie {
+    font-size: 18px;
+  }
+}

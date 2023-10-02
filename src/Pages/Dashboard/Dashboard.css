@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+}
+.title {
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  transform: translate(50%, -50%);
+}
+.arrow {
+  position: absolute;
+  top: 70%;
+  left: 49.3%;
+  transform: translate(+68%, -40%);
+}
+.arrow span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: arrow 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+.thinker {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  animation: fadein 5s;
+}
+@keyframes fadein {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+nav ul li:hover {
+  border-bottom: 2px solid black;
+  color: #2b1055;
+}
+nav ul li:active {
+  border-bottom: 2px solid black;
+  color: #2b1055;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+.logo {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  animation: fadein 2s;
+}
+.nav-links {
+  display: flex; /* wypisze w jednej lini */
+
+  justify-content: space-around;
+  width: 35%;
+}
+.nav-links li {
+  list-style: none; /* usuwanie stylu z listy kropki itp */
+}
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+/* na telefon */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+
+  body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+  }
+  html {
+    overflow-x: hidden;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+/* animacja */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+    z-index: 1000;
+  }
+}
+/* animacja burgera */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0px;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* svg anim */
+
+#head {
+  animation: pochyl 7s infinite ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#Vector_15 {
+  animation: rotate 15s infinite ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#Vector_18 {
+  animation: rotate 8s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pochyl {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+.thinker {
+  position: relative;
+}
+
+.thinker svg {
+  position: absolute;
+  top: -30px;
+  width: 711;
+  height: 348px;
+}
+
+@media screen and (max-width: 768px) {
+  svg {
+    z-index: 0;
+  }
+
+  .title {
+    font-size: 25px;
+
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav-links a {
+    z-index: 10000;
+  }
+  .thinker {
+    position: relative;
+  }
+  .thinker svg {
+    position: absolute;
+    width: 180px;
+    top: -5vh;
+    left: -20vw;
+  }
+}

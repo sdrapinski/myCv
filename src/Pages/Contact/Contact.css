@@ -1,0 +1,44 @@
+.glownycontact {
+  margin-top: 5vh;
+  height: 80vh;
+  background-color: rgb(95, 95, 95);
+  width: auto;
+  background-size: cover;
+  color: white;
+}
+.buttonik {
+  float: right;
+  height: 50px;
+  width: 200px;
+}
+.infocontact {
+  font-size: 20px;
+}
+.formik {
+  margin-top: 7vh;
+}
+.infocontact a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .glownycontact {
+    color: white;
+  }
+  .infocontact {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .buttonik {
+    float: none;
+    width: 80vw;
+  }
+  .formik {
+    margin-top: 10vh;
+    text-align: center;
+  }
+  .glownycontact {
+    height: 100vh;
+  }
+}
