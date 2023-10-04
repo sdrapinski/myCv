@@ -84,11 +84,11 @@ nav ul li a {
     opacity: 1;
   }
 }
-nav ul li:hover {
+.nav-links a:hover {
   border-bottom: 2px solid black;
   color: #2b1055;
 }
-nav ul li:active {
+.nav-links a:active {
   border-bottom: 2px solid black;
   color: #2b1055;
 }
@@ -105,12 +105,7 @@ nav {
   font-size: 20px;
   animation: fadein 2s;
 }
-.nav-links {
-  display: flex; /* wypisze w jednej lini */
 
-  justify-content: space-around;
-  width: 35%;
-}
 .nav-links li {
   list-style: none; /* usuwanie stylu z listy kropki itp */
 }
@@ -122,7 +117,10 @@ nav {
   font-size: 14px;
 }
 .burger {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   cursor: pointer;
 }
 .burger div {
@@ -152,9 +150,6 @@ nav {
   }
   .nav-links li {
     opacity: 0;
-  }
-  .burger {
-    display: block;
   }
 
   body {
