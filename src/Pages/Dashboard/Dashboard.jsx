@@ -41,10 +41,10 @@ const Dashboard = () => {
           </Col>
         )}
       </Row>
-      <span className="title"> Full-Stack DEVELOPER </span>
+      <span className="title"> Full-Stack Developer</span>
 
       <div className="arrow">
-        <a href="#about">
+        <a href="#skills">
           <span></span>
           <span></span>
           <span></span>

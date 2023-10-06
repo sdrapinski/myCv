@@ -63,7 +63,7 @@ body {
 }
 .thinker {
   position: absolute;
-  top: 5%;
+  top: 7%;
   left: 50%;
 }
 
@@ -127,11 +127,11 @@ nav {
   width: 25px;
   height: 3px;
   background-color: rgb(0, 0, 0);
-  margin: 5px;
+  margin: 2px;
   transition: all 0.3s ease;
 }
 /* na telefon */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   body {
     overflow-x: hidden;
   }
@@ -150,6 +150,9 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+  }
+  .logo {
+    letter-spacing: 2px;
   }
 
   body {
@@ -231,9 +234,35 @@ nav {
 
 .thinker svg {
   position: absolute;
-  top: -30px;
-  width: 711;
+  top: 0px;
+
   height: 348px;
+}
+@media screen and (max-width: 1600px) {
+  .logo {
+    letter-spacing: 2px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .thinker svg {
+    position: absolute;
+    width: 220px;
+    top: 60px;
+    left: -40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 30px;
+  }
+  .thinker svg {
+    position: absolute;
+    width: 220px;
+    top: 20px;
+    left: -60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -259,7 +288,7 @@ nav {
   .thinker svg {
     position: absolute;
     width: 180px;
-    top: -5vh;
-    left: -20vw;
+    top: 10px;
+    left: -40px;
   }
 }

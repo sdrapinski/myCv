@@ -6,7 +6,7 @@ import Projdisplay from "./Projdisplay";
 const Project = () => {
   return (
     <Container fluid>
-      <Row style={{ marginBottom: 50 }}>
+      <Row id="skills" style={{ marginBottom: 50 }}>
         <Col style={{ textAlign: "center", fontSize: 18 }}>
           <h1>Umiejętnosci </h1>{" "}
         </Col>
