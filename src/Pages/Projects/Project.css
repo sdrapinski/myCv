@@ -1,7 +1,7 @@
 .projecthandler {
   border: 1px solid black;
   border-radius: 20px;
-
+  margin: 10px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 .p1 {
@@ -15,9 +15,12 @@
   */
 }
 .projektyRow {
-  height: 45vh;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 50px;
+}
+.prozdj {
+  height: 300px;
+  max-width: 470px;
 }
 
 @media screen and (max-width: 768px) {
@@ -38,6 +41,12 @@
     background-position: center;
   }
   .prozdj {
-    height: 330px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .prozdj img {
+    object-fit: cover;
   }
 }
