@@ -8,7 +8,7 @@ const Project = () => {
     <Container fluid>
       <Row id="skills" style={{ marginBottom: 50 }}>
         <Col style={{ textAlign: "center", fontSize: 18 }}>
-          <h1>Umiejętnosci </h1>{" "}
+          <h1>Skills </h1>{" "}
         </Col>
       </Row>
 
@@ -111,7 +111,7 @@ const Project = () => {
           </svg>
         </Skillitem>
         <Skillitem>
-          <img src="./mysql.png" alt="" height="80px" />
+          <img src="./php.png" alt="" height="80px" />
         </Skillitem>
         <Skillitem>
           <img src="./figma.png" alt="" height="80px" />

@@ -2,15 +2,7 @@ import { Modal, Button, Form, Row, Col, Carousel } from "react-bootstrap";
 import React, { useState } from "react";
 
 function Modalepop(props) {
-  const images =
-    props.klasa === "p1"
-      ? [
-          "/shop/kolekcja.png",
-          "/shop/loggin.png",
-          "/shop/shop1.png",
-          "/shop/checkout.png",
-        ]
-      : ["/shop/main.png", "/shop/menu.png", "/shop/about.png"];
+  const images = props.img;
 
   const zamknij = (props) => {
     props.onHide();
@@ -67,7 +59,7 @@ function Modalepop(props) {
   );
 }
 
-function ProjectPop({ klasa, nazwa }) {
+function ProjectPop({ klasa, nazwa, img }) {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
@@ -82,16 +74,13 @@ function ProjectPop({ klasa, nazwa }) {
         <img
           className="prozdj"
           style={{ marginLeft: "-12px" }}
-          src={
-            klasa === "p1"
-              ? `./projekty/shop/shop1.png`
-              : `./projekty/shop/main.png`
-          }
-          alt=""
+          src={`./projekty/${img[0]}`}
+          alt="project"
         />
       </Col>
 
       <Modalepop
+        img={img}
         nazwa={nazwa}
         klasa={klasa}
         show={modalShow}

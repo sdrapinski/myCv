@@ -22,14 +22,14 @@ const Dashboard = () => {
           <Col>
             <Row className="nav-links">
               <Col>
-                <a href="#projects">Projekty</a>
+                <a href="#projects">Projects</a>
               </Col>
               <Col>
-                <a href="#about">O mnie</a>
+                <a href="#about">About</a>
               </Col>
 
               <Col>
-                <a href="#contact">Kontakt</a>
+                <a href="#contact">Contact</a>
               </Col>
             </Row>
           </Col>
